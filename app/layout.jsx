@@ -1,14 +1,27 @@
-import { Nunito, Space_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
+import Nav from "./components/Nav";
 
 import "./styles/app.scss";
 
-export const nunito = Nunito({
-  subsets: ["latin"],
-});
-
-export const space_mono = Space_Mono({
-  weight: "700",
-  subsets: ["latin"],
+const nunito = localFont({
+  src: [
+    {
+      path: "./fonts/Nunito-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Nunito-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Nunito-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata = {
@@ -30,6 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className} suppressHydrationWarning={true}>
+        <Nav />
         {children}
       </body>
     </html>
