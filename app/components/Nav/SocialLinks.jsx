@@ -13,12 +13,13 @@ const SocialLinks = () => {
         href="/"
         target="_blank"
         whileHover={{
-          scale: 1.2,
+          y: -3,
           transition: {
             duration: 0.5,
             ease: "easeInOut",
           },
         }}
+        whileTap={{ scale: 0.7 }}
       >
         <FacebookIcon />
       </MotionLink>
@@ -26,12 +27,13 @@ const SocialLinks = () => {
         href="/"
         target="_blank"
         whileHover={{
-          scale: 1.2,
+          y: -3,
           transition: {
             duration: 0.5,
             ease: "easeInOut",
           },
         }}
+        whileTap={{ scale: 0.7 }}
       >
         <InstagramIcon />
       </MotionLink>
@@ -39,12 +41,13 @@ const SocialLinks = () => {
         href="/"
         target="_blank"
         whileHover={{
-          scale: 1.2,
+          y: -3,
           transition: {
             duration: 0.5,
             ease: "easeInOut",
           },
         }}
+        whileTap={{ scale: 0.7 }}
       >
         <LinkedIn />
       </MotionLink>
@@ -52,12 +55,13 @@ const SocialLinks = () => {
         href="/"
         target="_blank"
         whileHover={{
-          scale: 1.2,
+          y: -3,
           transition: {
             duration: 0.5,
             ease: "easeInOut",
           },
         }}
+        whileTap={{ scale: 0.7 }}
       >
         <GithubIcon />
       </MotionLink>

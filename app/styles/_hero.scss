@@ -2,9 +2,13 @@
   z-index: 1;
   position: relative;
   height: calc(100vh - 100px);
-  margin: 0 auto 200px auto;
+  margin: 0 auto;
   img {
     object-fit: cover;
+  }
+
+  .astro_mob {
+    display: none;
   }
 
   .hero_txt {
@@ -46,6 +50,16 @@
     animation: bubbleUp 5s ease-in-out 4s forwards,
       bounce 4s ease-in-out 7s infinite;
   }
+  .hero_txt3 {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    width: 400px;
+    height: 400px;
+    animation: bubbleUp 4s ease-in-out 4s forwards,
+      bounce 4s ease-in-out 8s infinite;
+    display: none;
+  }
 
   @keyframes bubbleUp {
     0% {
@@ -66,6 +80,51 @@
     }
     100% {
       transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .hero {
+    .astro_mob {
+      display: unset;
+    }
+    .astro_desk {
+      display: none;
+    }
+
+    .hero_txt3 {
+      display: flex;
+    }
+    .hero_txt1,
+    .hero_txt2 {
+      display: none;
+    }
+
+    @keyframes bubbleUp {
+      0% {
+        top: 100%;
+        transform: translate(-50%, 0);
+
+        opacity: 0;
+      }
+      100% {
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity: 1;
+      }
+    }
+    @keyframes bounce {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+      50% {
+        transform: translate(-50%, -70%);
+      }
+      100% {
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }

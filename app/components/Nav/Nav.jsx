@@ -1,6 +1,6 @@
-import Logo from "./Nav/Logo";
-import SocialLinks from "./Nav/SocialLinks";
-import Menu from "./Nav/Menu";
+import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
+import Menu from "./Menu";
 
 const Nav = () => {
   return (

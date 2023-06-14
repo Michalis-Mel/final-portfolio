@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 
 import "./styles/app.scss";
 
