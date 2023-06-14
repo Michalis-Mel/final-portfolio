@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #141a26;
+  --blue1: #0e5078;
+  --blue2: #4a96d9;
+  --light: #c2cfdf;
+  --pink: #b2336f;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: linear-gradient(180deg, var(--dark) 50%, var(--blue1) 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+li {
+  color: var(--light);
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.animatedTitle {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.animatedTitle.top {
+  margin: 0 auto;
+}
+
+.animatedTitle.h2 {
+  font-size: 34px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: var(--dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+header .row {
+  height: 100%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .row .menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .row .menu a {
+  margin-right: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+header .row .menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--blue2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+header .row .menu a:hover {
+  color: var(--blue2);
+}
+header .row .menu a:hover::after {
+  width: 100%;
+}
+header .row .menu a.active::after {
+  width: 100%;
+}
+header .row .logo {
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--dark);
+  position: absolute;
+  left: 50%;
+  top: -200%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: fadeDown 2s linear forwards;
+  transition: all 1s ease-in-out;
+}
+header .row .logo:hover {
+  box-shadow: 0 0 20px var(--blue1);
+}
+@keyframes fadeDown {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0;
+  }
+}
+header .row .socials {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+header .row .socials a {
+  margin-left: 20px;
+}
+
+.hero {
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.hero .astro {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .astro_mob {
+  display: none;
+}
+.hero .bubble {
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  background: var(--dark);
+  opacity: 0;
+  bottom: 0;
+  box-shadow: 0 0 30px var(--blue1);
+}
+.hero .bubble:hover {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--pink) 100%);
+  box-shadow: 0 0 30px var(--pink);
+}
+@keyframes bubbleShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bubbleUp {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: 100%;
+  }
+  50% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.hero .bubble1 {
+  animation: bubbleShow 2s linear 2s forwards, bubbleUp 17s linear 2s infinite alternate;
+  left: 25%;
+}
+.hero .bubble2 {
+  animation: bubbleShow 2s linear 3s forwards, bubbleUp 18s linear 3s infinite alternate;
+  right: 0;
+}
+.hero .bubble3 {
+  animation: bubbleShow 2s linear 4s forwards, bubbleUp 19s linear 4s infinite alternate;
+  left: 0;
+}
+.hero .bubble4 {
+  animation: bubbleShow 2s linear 5s forwards, bubbleUp 20s linear 5s infinite alternate;
+  right: 25%;
+}
+.hero .bubble5 {
+  animation: bubbleShow 2s linear 6s forwards, bubbleUp 21s linear 6s infinite alternate;
+  left: 10%;
+}
+.hero .bubble6 {
+  animation: bubbleShow 2s linear 7s forwards, bubbleUp 22s linear 7s infinite alternate;
+  right: 10%;
+}
+.hero .arrow {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.hero .arrow:hover {
+  animation: arrowBounce 1s ease infinite;
+}
+@keyframes arrowBounce {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero .astro_mob {
+    display: unset;
+  }
+  .hero .astro_desk {
+    display: none;
+  }
+  @keyframes bubbleUp {
+    0% {
+      top: 100%;
+      transform: translate(-50%, 0);
+      opacity: 0;
+    }
+    100% {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+}
+.welcome {
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.welcome .row {
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 1200px;
+  text-align: center;
+}
+.welcome .row p {
+  font-size: 22px;
+  line-height: 30px;
+  width: 100%;
+}
+.welcome .row canvas {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 100px auto;
+  min-height: 350px;
+  max-height: 350px;
+}/*# sourceMappingURL=app.css.map */
