@@ -19,7 +19,7 @@ const Hero = () => {
         src={astro_mob}
         alt="Astronaut"
       />
-      {/* <div className="hero_txt hero_txt1">
+      <div className="hero_txt hero_txt1">
         <Image fill src={bubble} alt="bubble" />
         <h3>Welcome aboard, buckle up & enjoy the ride!</h3>
       </div>
@@ -33,7 +33,7 @@ const Hero = () => {
           Welcome aboard, buckle up & enjoy the ride! <br />
           Explore M² Portfolio&apos;s Celestial Wonders
         </h3>
-      </div> */}
+      </div>
     </div>
   );
 };
