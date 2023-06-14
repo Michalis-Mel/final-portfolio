@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/m²logo.png";
+import logo from "@/public/images/m²Logo.png";
 import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
@@ -19,8 +19,8 @@ const Logo = () => {
           },
         }}
         src={logo}
-        width={120}
-        height={120}
+        width={100}
+        height={100}
         alt="logo"
       />
     </Link>

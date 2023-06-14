@@ -1,0 +1,27 @@
+.welcome {
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  .row {
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+
+    p {
+      font-size: 22px;
+      line-height: 30px;
+      width: 100%;
+    }
+    canvas {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto 100px auto;
+      min-height: 350px;
+      max-height: 350px;
+    }
+  }
+}

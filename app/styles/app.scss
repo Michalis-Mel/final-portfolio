@@ -18,6 +18,9 @@ $mobile: 480px;
 $tablet: 768px;
 $laptop: 1280px;
 
+html {
+  scroll-behavior: smooth !important;
+}
 body {
   background: linear-gradient(180deg, var(--dark) 50%, var(--blue1) 100%);
 }
@@ -49,6 +52,21 @@ ul {
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
+}
+
+.animatedTitle {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+.animatedTitle.top {
+  margin: 0 auto;
+}
+.animatedTitle.h2 {
+  font-size: 34px;
 }
 
 @import "./nav.scss";

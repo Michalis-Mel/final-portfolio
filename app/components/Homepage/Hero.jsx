@@ -1,39 +1,56 @@
 import Image from "next/image";
-import astro from "@/public/space.jpg";
-import astro_mob from "@/public/space-mobile.jpg";
-import bubble from "@/public/bubble.png";
+import Link from "next/link";
+
+//Import images
+import astro from "@/public/images/space.jpg";
+import astro_mob from "@/public/images/space-mobile.jpg";
+import bubble from "@/public/images/bubble.png";
+import arrow from "@/public/images/arrow3.png";
+
+const Bubble = ({ size, index }) => {
+  return (
+    <Image
+      src={bubble}
+      width={size}
+      height={size}
+      alt="bubble"
+      className={`bubble bubble${index}`}
+    />
+  );
+};
+
 const Hero = () => {
   return (
     <div className="hero">
       <Image
-        className="astro_desk"
+        className="astro astro_desk"
         fill
         priority={true}
         src={astro}
         alt="Astronaut"
       />
       <Image
-        className="astro_mob"
+        className="astro astro_mob"
         fill
         priority={true}
         src={astro_mob}
         alt="Astronaut"
       />
-      <div className="hero_txt hero_txt1">
-        <Image fill src={bubble} alt="bubble" />
-        <h3>Welcome aboard, buckle up & enjoy the ride!</h3>
-      </div>
-      <div className="hero_txt hero_txt2">
-        <Image fill src={bubble} alt="bubble" />
-        <h3>Explore M² Portfolio&apos;s Celestial Wonders</h3>
-      </div>
-      <div className="hero_txt hero_txt3">
-        <Image fill src={bubble} alt="bubble" />
-        <h3>
-          Welcome aboard, buckle up & enjoy the ride! <br />
-          Explore M² Portfolio&apos;s Celestial Wonders
-        </h3>
-      </div>
+      <Bubble size={70} index={1} />
+      <Bubble size={90} index={2} />
+      <Bubble size={100} index={3} />
+      <Bubble size={120} index={4} />
+      <Bubble size={150} index={5} />
+      <Bubble size={200} index={6} />
+      <Link href="#welcome">
+        <Image
+          className="arrow"
+          src={arrow}
+          width={50}
+          height={50}
+          alt="Continue"
+        />
+      </Link>
     </div>
   );
 };

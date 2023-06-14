@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.74.15",
+    "@react-three/fiber": "^8.13.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.63.2"
+    "react-intersection-observer": "^9.4.4",
+    "sass": "^1.63.2",
+    "three": "^0.153.0"
   }
 }
