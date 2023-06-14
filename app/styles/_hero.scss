@@ -1,0 +1,71 @@
+.hero {
+  z-index: 1;
+  position: relative;
+  height: calc(100vh - 100px);
+  margin: 0 auto 200px auto;
+  img {
+    object-fit: cover;
+  }
+
+  .hero_txt {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--dark);
+    opacity: 0;
+    box-shadow: 0 0 30px var(--blue1);
+
+    &:hover {
+      background: linear-gradient(180deg, var(--dark) 0%, var(--pink) 100%);
+      box-shadow: 0 0 30px var(--pink);
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 21px;
+      line-height: 25px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  .hero_txt1 {
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    animation: bubbleUp 5s ease-in-out 2s forwards,
+      bounce 4s ease-in-out 5s infinite;
+  }
+  .hero_txt2 {
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    animation: bubbleUp 5s ease-in-out 4s forwards,
+      bounce 4s ease-in-out 7s infinite;
+  }
+
+  @keyframes bubbleUp {
+    0% {
+      top: 100%;
+      opacity: 0;
+    }
+    100% {
+      top: 20%;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

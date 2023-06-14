@@ -13,17 +13,16 @@ const Logo = () => {
         animate={{
           rotate: 360,
           transition: {
-            duration: 10,
+            duration: 18,
             ease: "linear",
             repeat: Infinity,
           },
         }}
         src={logo}
-        width={100}
-        height={100}
+        width={120}
+        height={120}
         alt="logo"
       />
-      <h1>M² Portfolio</h1>
     </Link>
   );
 };

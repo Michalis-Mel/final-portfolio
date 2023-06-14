@@ -10,6 +10,7 @@
   --blue1: #0e5078;
   --blue2: #4a96d9;
   --light: #c2cfdf;
+  --pink: #b2336f;
 }
 
 //Responsive sizes
@@ -18,7 +19,7 @@ $tablet: 768px;
 $laptop: 1280px;
 
 body {
-  background: var(--blue1);
+  background: linear-gradient(180deg, var(--dark) 50%, var(--blue1) 100%);
 }
 
 h1,
@@ -51,3 +52,4 @@ ul {
 }
 
 @import "./nav.scss";
+@import "./hero.scss";
