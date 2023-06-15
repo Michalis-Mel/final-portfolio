@@ -1,3 +1,5 @@
+"use client";
+
 import Logo from "./Logo";
 import SocialLinks from "./SocialLinks";
 import Menu from "./Menu";
