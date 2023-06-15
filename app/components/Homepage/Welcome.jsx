@@ -8,10 +8,14 @@ const Welcome = () => {
     <div id="welcome" className="welcome">
       <div className="row">
         <AnimatedTextCharacter
-          className="top"
+          className="top med"
           text="Crafting Stellar Realities"
         />
-        <AnimatedTextCharacter text="Using Cosmic Code and Design" />
+        <AnimatedTextCharacter
+          className="med margin"
+          text="Using Cosmic Code and Design"
+          myDelay={1}
+        />
         <motion.p
           initial={{
             opacity: 0,
@@ -20,7 +24,7 @@ const Welcome = () => {
           whileInView={{
             opacity: 1,
             y: 0,
-            transition: { duration: 3, delay: 2 },
+            transition: { duration: 2 },
           }}
         >
           Welcome, intrepid voyagers, to my celestial realm, M² Portfolio. I am
@@ -36,16 +40,8 @@ const Welcome = () => {
           up, stargazers, and let M² Portfolio be your guiding star on this
           extraordinary adventure into the realm of digital marvels.
         </motion.p>
-        <SpaceshipCanvas />
-
-        <AnimatedTextCharacter
-          className="top h2"
-          text="Secure your seatbelts and prepare for liftoff"
-        />
-        <AnimatedTextCharacter
-          className="h2"
-          text="as we embark on a stellar expedition through my portfolio"
-        />
+        {/* A 3D airship model in .gltf that made the app slow down
+        <SpaceshipCanvas />  */}
       </div>
     </div>
   );

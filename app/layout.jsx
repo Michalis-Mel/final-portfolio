@@ -1,6 +1,10 @@
+"use client";
 import localFont from "next/font/local";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 import Nav from "./components/Nav/Nav";
+import Loading from "./components/loading";
 
 import "./styles/app.scss";
 
@@ -40,12 +44,33 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const [loading, setLoading] = useState(false);
+
   return (
     <html lang="en">
-      <body className={nunito.className} suppressHydrationWarning={true}>
-        <Nav />
-        {children}
-      </body>
+      {loading ? (
+        <motion.body
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+            transition: {
+              duration: 3,
+              ease: "linear",
+            },
+          }}
+          className={nunito.className}
+          suppressHydrationWarning={true}
+        >
+          <Nav />
+          {children}
+        </motion.body>
+      ) : (
+        <body className={nunito.className} suppressHydrationWarning={true}>
+          <Loading setLoading={setLoading} />
+        </body>
+      )}
     </html>
   );
 }
