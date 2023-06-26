@@ -50,7 +50,10 @@ export function ClientRootLayout({ children }) {
           {children}
         </motion.body>
       ) : (
-        <body className={nunito.className} suppressHydrationWarning={true}>
+        <body
+          className={`${nunito.className} load`}
+          suppressHydrationWarning={true}
+        >
           <Loading setLoading={setLoading} />
         </body>
       )}

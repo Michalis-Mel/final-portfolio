@@ -1,5 +1,5 @@
 "use client";
-import AnimatedTextCharacter from "./AnimatedTitle";
+import { AnimatedTextCharacter } from "@/app/animations";
 import arrow from "@/public/images/arrow3.png";
 import Image from "next/image";
 import { motion } from "framer-motion";

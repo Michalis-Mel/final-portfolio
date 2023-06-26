@@ -1,8 +1,11 @@
-import Homepage from "./components/Homepage/Homepage";
+import Hero from "./components/Homepage/Hero";
+import Welcome from "./components/Homepage/Welcome";
+
 export default function Home() {
   return (
     <main>
-      <Homepage />
+      <Hero />
+      <Welcome />
     </main>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
-import AnimatedTextCharacter from "../AnimatedTitle";
+import { AnimatedTextCharacter, FadeInText, FadeInDiv } from "@/app/animations";
 import Image from "next/image";
 import Link from "next/link";
 import man from "@/public/images/purple-man.webp";
@@ -19,42 +18,23 @@ const Welcome = () => {
           text="Using Cosmic Code and Design"
           myDelay={1}
         />
-        <motion.p
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 2 },
-          }}
-        >
-          Welcome, intrepid voyagers, to my celestial realm, M² Portfolio. I am
+        <FadeInText
+          text="Welcome, intrepid voyagers, to my celestial realm, M² Portfolio. I am
           Michael Meliopoulos, a visionary front-end developer, inviting you to
           embark on a cosmic journey through my stellar creations. Inspired by
           the mysteries of the universe, my space-themed portfolio aims to
           ignite your imagination and transport you to galaxies of innovation
-          and captivating design. With each orbit, you&apos;ll witness the
+          and captivating design. With each orbit, you'll witness the
           seamless fusion of technology and artistry, as breathtaking user
           interfaces and transcendent user experiences come to life. Prepare to
           be dazzled as you navigate the constellations of my projects,
           showcasing the boundless possibilities of web development. So buckle
           up, stargazers, and let M² Portfolio be your guiding star on this
-          extraordinary adventure into the realm of digital marvels.
-        </motion.p>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 2 },
-          }}
-          className="welcome_btns"
-        >
+          extraordinary adventure into the realm of digital marvels."
+          myDelay={2}
+        />
+
+        <FadeInDiv className="welcome_btns" myDelay={2}>
           <Link
             href="/Resume.pdf"
             target="_blank"
@@ -77,18 +57,8 @@ const Welcome = () => {
             <i></i>
             <span> Contact</span>
           </Link>
-        </motion.div>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 0,
-          }}
-          whileInView={{
-            opacity: 1,
-            transition: { duration: 4 },
-          }}
-          className="man_container"
-        >
+        </FadeInDiv>
+        <FadeInDiv className="man_container" myDelay={2}>
           <Image src={man} width={500} alt="Man" />
           <div className="man_msg">
             <h3>
@@ -97,7 +67,7 @@ const Welcome = () => {
               <span>Michael Meliopoulos</span>
             </h3>
           </div>
-        </motion.div>
+        </FadeInDiv>
       </div>
     </div>
   );

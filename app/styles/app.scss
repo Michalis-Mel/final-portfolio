@@ -23,6 +23,12 @@ html {
 }
 body {
   background: linear-gradient(180deg, var(--dark) 50%, #031c2c 100%);
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+body.load {
+  padding: 0;
 }
 
 //Scrollbar
@@ -137,3 +143,4 @@ ul {
 @import "./nav.scss";
 @import "./hero.scss";
 @import "./welcome.scss";
+@import "./about.scss";
