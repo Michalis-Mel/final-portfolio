@@ -1,3 +1,4 @@
+"use client";
 import { AnimatedTextCharacter } from "@/app/animations";
 
 const Skills = () => {
