@@ -17,7 +17,7 @@ const Biography = () => {
         text="Meet the Mind Behind the Code"
       />
       <div className="bio_txt">
-        <FadeInText className="bio_ttl" text="Biography" myDelay={2} />
+        <FadeInText className="bio_ttl" text="Biography" myDelay={1} />
 
         <FadeInText
           text="Welcome, cosmic explorers! I'm Michael Meliopoulos, an
@@ -26,7 +26,7 @@ const Biography = () => {
             years of traversing the digital cosmos, I constantly seek new
             frontiers and innovative methods to manifest my client's
             visions into reality."
-          myDelay={2}
+          myDelay={1}
         />
         <FadeInText
           text="In my cosmic design philosophy, I believe that aesthetics transcend
@@ -35,16 +35,16 @@ const Biography = () => {
             celestial websites, stellar mobile apps, or other astral digital
             creations, I infuse each project with a commitment to design
             excellence and user-centricity."
-          myDelay={2}
+          myDelay={1}
         />
         <FadeInText
           text="Embark on an extraordinary expedition and allow me to channel my
             skills and celestial devotion into realizing your next visionary
             project. Together, we shall redefine the boundaries of the digital
             universe."
-          myDelay={2}
+          myDelay={1}
         />
-        <FadeInDiv className="stats" myDelay={2}>
+        <FadeInDiv className="stats" myDelay={1}>
           <Tilt>
             <div className="stat">
               <div className="number_con">
@@ -72,7 +72,7 @@ const Biography = () => {
           </Tilt>
         </FadeInDiv>
       </div>
-      <FadeInDiv className="bio_img_con" myDelay={2}>
+      <FadeInDiv className="bio_img_con" myDelay={1}>
         <Image src={hotel} width={450} alt="Web Developer in Space Hotel" />
       </FadeInDiv>
     </div>

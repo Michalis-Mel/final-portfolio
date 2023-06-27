@@ -1,9 +1,16 @@
+import ProjectSection from "../components/Projects/page";
 export const metadata = {
   title: "M² Portfolio | Projects",
 };
 
 const Projects = () => {
-  return <div>route</div>;
+  return (
+    <main className="projects">
+      <div className="row">
+        <ProjectSection />
+      </div>
+    </main>
+  );
 };
 
 export default Projects;

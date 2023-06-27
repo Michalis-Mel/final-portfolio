@@ -8,6 +8,7 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
+  box-shadow: 0 0 15px var(--blue2);
 
   .row {
     height: 100%;
@@ -64,10 +65,11 @@ header {
       transform: translateX(-50%);
       border-radius: 50%;
       animation: fadeDown 2s linear forwards;
+      box-shadow: 0 0 15px var(--blue2);
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        box-shadow: 0 0 20px var(--blue1);
+        box-shadow: 0 0 15px var(--pink);
       }
 
       @keyframes fadeDown {
