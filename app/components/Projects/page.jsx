@@ -1,5 +1,5 @@
 "use client";
-import { AnimatedTextCharacter } from "@/app/animations";
+import { AnimatedTextCharacter, FadeInDiv } from "@/app/animations";
 import { projects } from "@/app/constants/Projects";
 import gitIcon from "@/public/images/icons/github.svg";
 import liveIcon from "@/public/images/icons/live.svg";
@@ -8,28 +8,33 @@ import Link from "next/link";
 
 const Project = ({ project }) => {
   return (
-    <div className="project">
-      <Image src={project.image} alt={project.name} width={600} />
-      <div className="project_info">
-        <h2>{project.name}</h2>
-        <p>{project.description}</p>
-        <ul>
-          {project.technologies.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
-        <div className="btns">
-          <Link href={project.github} target="_blank">
-            <Image src={gitIcon} width={70} alt="Github" />
-            Github
-          </Link>
-          <Link href={project.live} target="_blank">
-            <Image src={liveIcon} width={70} alt="Live" />
-            Live
-          </Link>
+    <FadeInDiv className="project">
+      <div className="project_con">
+        <div className="project_img">
+          <Image src={project.image} alt={project.name} width={1920} />
+        </div>
+        <div className="project_info">
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
+          <h4>Technologies used:</h4>
+          <ul>
+            {project.technologies.map((tech, index) => (
+              <li key={index}>{tech}</li>
+            ))}
+          </ul>
+          <div className="project_btns">
+            <Link href={project.github} target="_blank">
+              <Image src={gitIcon} width={35} alt="Github" />
+              <span>Github</span>
+            </Link>
+            <Link href={project.live} target="_blank">
+              <Image src={liveIcon} width={35} alt="Live" />
+              <span>Live</span>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </FadeInDiv>
   );
 };
 
