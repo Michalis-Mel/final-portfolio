@@ -23,14 +23,22 @@ const Project = ({ project }) => {
             ))}
           </ul>
           <div className="project_btns">
-            <Link href={project.github} target="_blank">
-              <Image src={gitIcon} width={35} alt="Github" />
-              <span>Github</span>
-            </Link>
-            <Link href={project.live} target="_blank">
-              <Image src={liveIcon} width={35} alt="Live" />
-              <span>Live</span>
-            </Link>
+            {project.github ? (
+              <Link href={project.github} target="_blank">
+                <Image src={gitIcon} width={35} alt="Github" />
+                <span>Github</span>
+              </Link>
+            ) : (
+              <></>
+            )}
+            {project.live ? (
+              <Link href={project.live} target="_blank">
+                <Image src={liveIcon} width={35} alt="Live" />
+                <span>Live</span>
+              </Link>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

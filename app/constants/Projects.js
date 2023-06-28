@@ -5,6 +5,7 @@ import repos from "@/public/images/projects_images/repos.png";
 import rick from "@/public/images/projects_images/rick.png";
 import sphere from "@/public/images/projects_images/sphere.png";
 import wikirocket from "@/public/images/projects_images/wikirocket.png";
+import tsaou from "@/public/images/projects_images/tsaou.png";
 
 export const projects = [
   {
@@ -84,5 +85,15 @@ export const projects = [
     image: rick,
     github: "https://github.com/Michalis-Mel/rick_morty",
     live: "https://michalis-mel.github.io/rick_morty/",
+  },
+  {
+    id: 8,
+    name: "Tsaousis Accounting",
+    technologies: ["Wordpress", "CSS"],
+    description:
+      "The website for Tsaousis Accounting is a reliable platform that offers comprehensive accounting services. With a user-friendly interface, it provides valuable information about the firm's expertise and range of services, including tax planning, financial reporting, and auditing. Demonstrating professionalism and attention to detail, Tsaousis Accounting serves as a trusted resource for individuals and businesses seeking expert accounting assistance.",
+    image: tsaou,
+    github: "",
+    live: "https://www.tsaousis-accounting.gr/",
   },
 ];
