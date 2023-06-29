@@ -54,6 +54,11 @@ const ContactSection = () => {
         }
       );
   };
+
+  const blue1 = { "--clr": "#F2A36F" };
+  const blue2 = { "--clr": "#4a96d9" };
+  const pink = { "--clr": "#b2336f" };
+
   return (
     <>
       <AnimatedTextCharacter
@@ -62,9 +67,11 @@ const ContactSection = () => {
         myDelay={0.5}
       />
       <FadeInDiv myDelay={1} className="contact_form">
+        <i style={blue1}></i>
+        <i style={blue2}></i>
+        <i style={pink}></i>
         <form ref={formRef} onSubmit={handleSubmit}>
           <label>
-            <span>Your Name</span>
             <input
               type="text"
               name="name"
@@ -74,7 +81,6 @@ const ContactSection = () => {
             />
           </label>
           <label>
-            <span>Your Email</span>
             <input
               type="email"
               name="email"
@@ -84,9 +90,8 @@ const ContactSection = () => {
             />
           </label>
           <label>
-            <span>Your Message</span>
             <textarea
-              rows={7}
+              rows={5}
               name="message"
               value={form.message}
               onChange={handleChange}
