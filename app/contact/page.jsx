@@ -5,7 +5,7 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact_page">
       <div className="row">
         <ContactSection />
       </div>

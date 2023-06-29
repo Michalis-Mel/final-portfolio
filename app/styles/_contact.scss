@@ -1,0 +1,84 @@
+.contact_page {
+  width: 100%;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+  background-image: url("../../public/images/contact-space.png");
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 79.5px);
+
+  .row {
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 500px;
+
+    .contact_form {
+      width: 100%;
+      margin-top: 20px;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background: #063450;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 50px;
+
+        label {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          margin-bottom: 40px;
+
+          span {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+
+          input,
+          textarea {
+            min-height: 40px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border: none;
+            resize: none;
+            font-size: 18px;
+            outline: none;
+
+            &:focus {
+              box-shadow: 0 0 20px var(--blue2);
+            }
+
+            &::placeholder {
+              font-size: 18px;
+              color: var(--dark);
+              font-weight: 300;
+            }
+          }
+        }
+
+        button {
+          width: 100%;
+          max-width: 150px;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          font-size: 20px;
+          background: var(--dark);
+          color: var(--light);
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          font-weight: 500;
+
+          &:hover {
+            box-shadow: 0 0 20px var(--blue2);
+          }
+        }
+      }
+    }
+  }
+}

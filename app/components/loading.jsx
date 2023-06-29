@@ -25,12 +25,12 @@ export default function Loading({ setLoading }) {
         <AnimatedTextCharacter
           text="M² Portfolio"
           className="big"
-          myDelay={3}
+          myDelay={2}
         />
         <AnimatedTextCharacter
           text="by Michael Meliopoulos"
           className="small "
-          myDelay={4}
+          myDelay={3}
         />
       </div>
 

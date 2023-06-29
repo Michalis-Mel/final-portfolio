@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import man from "@/public/images/purple-man.webp";
 import link from "@/public/images/icons/link.svg";
+import mail from "@/public/images/icons/email.png";
 
 const Welcome = () => {
   return (
@@ -55,7 +56,10 @@ const Welcome = () => {
           >
             <i></i>
             <i></i>
-            <span> Contact</span>
+            <span>
+              Contact
+              <Image src={mail} width={25} alt="Email" />
+            </span>
           </Link>
         </FadeInDiv>
         <FadeInDiv className="man_container" myDelay={1.5}>
