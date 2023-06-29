@@ -73,7 +73,13 @@ const Biography = () => {
         </FadeInDiv>
       </div>
       <FadeInDiv className="bio_img_con" myDelay={1}>
-        <Image src={hotel} width={450} alt="Web Developer in Space Hotel" />
+        <Image
+          src={hotel}
+          width={450}
+          alt="Web Developer in Space Hotel"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </FadeInDiv>
     </div>
   );

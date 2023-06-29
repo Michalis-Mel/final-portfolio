@@ -11,7 +11,12 @@ const Project = ({ project }) => {
     <FadeInDiv className="project">
       <div className="project_con">
         <div className="project_img">
-          <Image src={project.image} alt={project.name} width={1920} />
+          <Image
+            placeholder="blur"
+            src={project.image}
+            alt={project.name}
+            width={1920}
+          />
         </div>
         <div className="project_info">
           <h2>{project.name}</h2>

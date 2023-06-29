@@ -59,7 +59,12 @@ const Welcome = () => {
           </Link>
         </FadeInDiv>
         <FadeInDiv className="man_container" myDelay={1.5}>
-          <Image src={man} width={500} alt="Man" />
+          <Image
+            src={man}
+            width={500}
+            alt="Man"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
           <div className="man_msg">
             <h3>
               Within the depths of my being, stardust dances, fueling the

@@ -10,6 +10,8 @@ import arrow from "@/public/images/arrow3.png";
 const Bubble = ({ size, index }) => {
   return (
     <Image
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       src={bubble}
       width={size}
       height={size}
