@@ -8,7 +8,6 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0 0 15px var(--blue2);
 
   .row {
     height: 100%;
@@ -56,7 +55,7 @@ header {
     }
 
     .logo {
-      padding: 20px;
+      padding: 15px;
       box-sizing: border-box;
       background: var(--dark);
       position: absolute;
@@ -67,6 +66,7 @@ header {
       animation: fadeDown 2s linear forwards;
       box-shadow: 0 0 15px var(--blue2);
       transition: all 0.3s ease-in-out;
+      font-size: 0;
 
       &:hover {
         box-shadow: 0 0 15px var(--pink);
@@ -80,22 +80,6 @@ header {
           top: 0;
         }
       }
-      // @keyframes pulse {
-      //   0% {
-      //     box-shadow: 0 0 0 var(--blue1);
-      //   }
-      //   25% {
-      //     box-shadow: 0 0 10px var(--blue1);
-      //   }
-      //   50% {
-      //   }
-      //   75% {
-      //     box-shadow: 0 0 10px var(--pink);
-      //   }
-      //   100% {
-      //     box-shadow: 0 0 0 var(--blue1);
-      //   }
-      // }
     }
 
     .socials {
