@@ -45,8 +45,8 @@ export default function Loading({ setLoading }) {
         onClick={() => setLoading(true)}
         className="arrow"
         src={arrow}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt="continue"
       />
     </motion.div>

@@ -111,24 +111,22 @@ ul {
   background-position: center;
   background-size: cover;
   z-index: 999;
+  position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  flex-flow: column nowrap;
 
   .loadAnimated {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .arrow {
     cursor: pointer;
-    margin-bottom: 10px;
     animation: arrowJump 1.5s linear infinite;
   }
 
