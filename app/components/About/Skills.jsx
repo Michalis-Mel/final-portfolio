@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 const Skill = ({ key, name, icon }) => {
   return (
     <div className="skill">
-      <Image src={icon} width={80} alt={key} />
+      <Image src={icon} width={80} alt={name} />
       <h3>{name}</h3>
     </div>
   );

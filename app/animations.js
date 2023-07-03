@@ -75,7 +75,7 @@ export const AnimatedStats = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref}></span>;
+  return <span ref={ref}>0</span>;
 };
 
 //Text fadeIn from bottom to top

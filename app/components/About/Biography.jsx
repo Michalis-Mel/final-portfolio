@@ -78,7 +78,7 @@ const Biography = () => {
           width={450}
           alt="Web Developer in Space Hotel"
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 1100px) 50vw"
         />
       </FadeInDiv>
     </div>

@@ -8,9 +8,9 @@ const MotionLink = motion(Link);
 
 const SocialLinks = () => {
   return (
-    <nav className="socials">
+    <div className="socials">
       <MotionLink
-        href="/"
+        href="https://github.com/Michalis-Mel"
         target="_blank"
         whileHover={{
           y: -3,
@@ -21,24 +21,10 @@ const SocialLinks = () => {
         }}
         whileTap={{ scale: 0.7 }}
       >
-        <FacebookIcon />
+        <GithubIcon />
       </MotionLink>
       <MotionLink
-        href="/"
-        target="_blank"
-        whileHover={{
-          y: -3,
-          transition: {
-            duration: 0.5,
-            ease: "easeInOut",
-          },
-        }}
-        whileTap={{ scale: 0.7 }}
-      >
-        <InstagramIcon />
-      </MotionLink>
-      <MotionLink
-        href="/"
+        href="https://www.linkedin.com/in/mixalis-meliopoulos/"
         target="_blank"
         whileHover={{
           y: -3,
@@ -52,7 +38,7 @@ const SocialLinks = () => {
         <LinkedIn />
       </MotionLink>
       <MotionLink
-        href="/"
+        href="https://www.facebook.com/mixalis.meliopoulos/"
         target="_blank"
         whileHover={{
           y: -3,
@@ -63,9 +49,23 @@ const SocialLinks = () => {
         }}
         whileTap={{ scale: 0.7 }}
       >
-        <GithubIcon />
+        <FacebookIcon />
       </MotionLink>
-    </nav>
+      <MotionLink
+        href="https://www.instagram.com/mixalis__meliopoulos/"
+        target="_blank"
+        whileHover={{
+          y: -3,
+          transition: {
+            duration: 0.5,
+            ease: "easeInOut",
+          },
+        }}
+        whileTap={{ scale: 0.7 }}
+      >
+        <InstagramIcon />
+      </MotionLink>
+    </div>
   );
 };
 

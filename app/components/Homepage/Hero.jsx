@@ -11,7 +11,7 @@ const Bubble = ({ size, index }) => {
   return (
     <Image
       priority
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      sizes="(max-width: 1100px) 50vw"
       src={bubble}
       width={size}
       height={size}
@@ -27,16 +27,20 @@ const Hero = () => {
       <Image
         className="astro astro_desk"
         fill
+        quality={100}
         priority={true}
         src={astro}
         alt="Astronaut"
+        sizes="(max-width: 1100px) 50vw"
       />
       <Image
         className="astro astro_mob"
+        quality={100}
         fill
         priority={true}
         src={astro_mob}
         alt="Astronaut"
+        sizes="(max-width: 500px) 50vw"
       />
       <Bubble size={70} index={1} />
       <Bubble size={90} index={2} />

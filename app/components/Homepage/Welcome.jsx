@@ -67,7 +67,7 @@ const Welcome = () => {
             src={man}
             width={500}
             alt="Man"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 1100px) 50vw"
           />
           <div className="man_msg">
             <h3>
