@@ -1,4 +1,6 @@
 .contact_page {
+  overflow: hidden;
+  padding-top: 80px;
   width: 100%;
   box-sizing: border-box;
   background-image: url("../../public/images/contact-space.png");
@@ -131,5 +133,13 @@
 @media only screen and (max-width: 1100px) {
   .contact_page {
     min-height: calc(100vh - 39.5px);
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .contact_page .row {
+    .animatedTitle.med {
+      margin: 0 auto;
+      font-size: 32px;
+    }
   }
 }
