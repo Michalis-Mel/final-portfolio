@@ -82,14 +82,12 @@ const MobileNav = () => {
       opacity: 1,
       transition: {
         duration: 0.65,
-        ease: "easeOut",
       },
     },
     closed: {
       opacity: 0,
       transition: {
         duration: 0.25,
-        ease: "easeInOut",
       },
     },
   };
@@ -98,7 +96,7 @@ const MobileNav = () => {
       opacity: 1,
       transition: {
         duration: 2,
-        ease: "easeOut",
+        ease: "easeInOut",
         delay: 2,
       },
     },
