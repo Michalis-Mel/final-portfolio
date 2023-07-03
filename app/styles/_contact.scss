@@ -136,10 +136,37 @@
   }
 }
 @media only screen and (max-width: $mobile) {
-  .contact_page .row {
-    .animatedTitle.med {
-      margin: 0 auto;
-      font-size: 32px;
+  .contact_page {
+    height: 100vh;
+    min-height: unset;
+    padding-top: 0;
+    position: relative;
+
+    .row {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      .animatedTitle.med {
+        margin: 0 auto;
+        font-size: 32px;
+      }
+      .contact_form {
+        width: 100%;
+        height: unset;
+        i {
+          display: none;
+        }
+
+        form {
+          position: relative;
+          width: 100%;
+          top: unset;
+          left: unset;
+          transform: none;
+          border-radius: 0;
+        }
+      }
     }
   }
 }
