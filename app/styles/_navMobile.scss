@@ -24,8 +24,12 @@ header.mob_head {
         width: 100%;
 
         h1 {
-          font-size: 28px;
+          font-size: 26px;
           text-shadow: 0 0 4px var(--blue2);
+        }
+
+        h1.logo-ttl-Mob {
+          display: none;
         }
       }
 
@@ -254,8 +258,16 @@ header.mob_head {
 }
 
 @media screen and (max-width: $mobile) {
-  header.mob_head .row .logo {
-    width: 60px;
-    height: 60px;
+  header.mob_head .row .mob-nav {
+    .logo-ttl h1.logo-ttl-Mob {
+      display: unset;
+    }
+    .logo-ttl h1.logo-ttl-Desk {
+      display: none;
+    }
+    .logo-container {
+      width: 60px;
+      height: 60px;
+    }
   }
 }

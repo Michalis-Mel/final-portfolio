@@ -116,7 +116,8 @@ const MobileNav = () => {
       animate={mobileNavOpen ? "opened" : "closed"}
     >
       <motion.div className="logo-ttl" variants={hideNavItemsVariant}>
-        <h1>M² Portfolio</h1>
+        <h1 className="logo-ttl-Mob">M²</h1>
+        <h1 className="logo-ttl-Desk">M² Portfolio</h1>
       </motion.div>
       <motion.div className="logo-container" variants={hideNavItemsVariant}>
         <Logo />
