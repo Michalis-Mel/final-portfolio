@@ -80,7 +80,6 @@ const MobileNav = () => {
   const liVariant = {
     opened: {
       opacity: 1,
-      y: "0%",
       transition: {
         duration: 0.65,
         ease: "easeOut",
@@ -88,7 +87,6 @@ const MobileNav = () => {
     },
     closed: {
       opacity: 0,
-      y: "100%",
       transition: {
         duration: 0.25,
         ease: "easeInOut",

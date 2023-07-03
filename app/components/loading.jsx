@@ -35,12 +35,12 @@ export default function Loading({ setLoading }) {
       </div>
 
       <MotionImage
-        whileHover={{
-          scale: 2,
-          transition: {
-            duration: 0.5,
-            ease: "easeInOut",
-          },
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 2, delay: 4 },
         }}
         onClick={() => setLoading(true)}
         className="arrow"
