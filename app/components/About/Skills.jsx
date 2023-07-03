@@ -22,6 +22,7 @@ const Skills = () => {
           return (
             <Tilt key={skill.name} className="skill_con">
               <Skill name={skill.name} icon={skill.icon} />
+              <h4>{skill.name}</h4>
             </Tilt>
           );
         })}

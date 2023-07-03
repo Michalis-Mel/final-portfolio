@@ -17,7 +17,7 @@ const Welcome = () => {
         <AnimatedTextCharacter
           className="med margin"
           text="Using Cosmic Code and Design"
-          myDelay={0.5}
+          myDelay={0}
         />
         <FadeInText
           text="Welcome, intrepid voyagers, to my celestial realm, M² Portfolio. I am
@@ -32,10 +32,10 @@ const Welcome = () => {
           showcasing the boundless possibilities of web development. So buckle
           up, stargazers, and let M² Portfolio be your guiding star on this
           extraordinary adventure into the realm of digital marvels."
-          myDelay={1.5}
+          myDelay={0}
         />
 
-        <FadeInDiv className="welcome_btns" myDelay={1.5}>
+        <FadeInDiv className="welcome_btns" myDelay={0}>
           <Link
             href="/Resume.pdf"
             target="_blank"
@@ -62,7 +62,7 @@ const Welcome = () => {
             </span>
           </Link>
         </FadeInDiv>
-        <FadeInDiv className="man_container" myDelay={1.5}>
+        <FadeInDiv className="man_container" myDelay={0}>
           <Image
             src={man}
             width={500}

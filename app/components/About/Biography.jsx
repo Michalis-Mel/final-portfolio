@@ -8,14 +8,22 @@ import {
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import hotel from "@/public/images/hotel-portrait.png";
+import hotelMob from "@/public/images/hotel.webp";
 
 const Biography = () => {
   return (
     <div className="bio">
-      <AnimatedTextCharacter
-        className="margin med"
-        text="Meet the Mind Behind the Code"
-      />
+      <div className="mob_ttl">
+        <AnimatedTextCharacter className="margin med" text="Meet the Mind" />
+        <AnimatedTextCharacter className="margin med" text="Behind the Code" />
+      </div>
+      <div className="desk_ttl">
+        <AnimatedTextCharacter
+          className="margin med"
+          text="Meet the Mind Behind the Code"
+        />
+      </div>
+
       <div className="bio_txt">
         <FadeInText className="bio_ttl" text="Biography" myDelay={1} />
 
@@ -72,13 +80,23 @@ const Biography = () => {
           </Tilt>
         </FadeInDiv>
       </div>
-      <FadeInDiv className="bio_img_con" myDelay={1}>
+      <FadeInDiv className="bio_img_con desk" myDelay={1}>
         <Image
           src={hotel}
           width={450}
           alt="Web Developer in Space Hotel"
           priority
           sizes="(max-width: 1100px) 50vw"
+        />
+      </FadeInDiv>
+      <FadeInDiv className="bio_img_con mob" myDelay={1}>
+        <Image
+          src={hotelMob}
+          quality={100}
+          width={900}
+          alt="Web Developer in Space Hotel"
+          priority
+          sizes="(max-width: 1100px) 100vw"
         />
       </FadeInDiv>
     </div>

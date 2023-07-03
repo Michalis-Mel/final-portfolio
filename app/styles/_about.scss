@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  margin: 100px auto;
+  margin: 50px auto;
 
   .row {
     flex-flow: column nowrap;
@@ -11,6 +11,20 @@
       width: 100%;
       display: flex;
       flex-flow: row wrap;
+
+      .mob_ttl {
+        width: 100%;
+        display: none;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .desk_ttl {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       .bio_txt {
         flex: 0 0 70%;
@@ -28,7 +42,7 @@
 
         p {
           margin: 20px auto 0 auto;
-          font-size: 18px;
+          font-size: 20px;
           line-height: 28px;
         }
 
@@ -86,8 +100,17 @@
         flex: 0 0 30%;
         width: 30%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .bio_img_con.mob {
+        display: none;
       }
     }
 
@@ -132,6 +155,14 @@
               font-size: 17px;
               text-shadow: 0 0 10px var(--blue2);
             }
+          }
+          h4 {
+            font-size: 20px;
+            margin: 15px auto 0 auto;
+            width: 100%;
+            text-align: center;
+            display: none;
+            text-shadow: 0 0 15px var(--blue2);
           }
         }
       }
@@ -252,6 +283,139 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .about .row .bio {
+    margin: 50px auto 100px auto;
+
+    .bio_txt .stats {
+      margin-top: 50px;
+
+      .stat {
+        width: 150px;
+        height: 150px;
+        margin: 0 20px;
+        .number_con {
+          font-size: 20px;
+
+          span {
+            font-size: 30px;
+          }
+        }
+        h2 {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .about .row .bio {
+    .bio_txt {
+      flex: 0 0 100%;
+      width: 100%;
+      padding: 0;
+      margin: 30px auto 80px auto;
+    }
+    .bio_img_con {
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+    }
+    .bio_img_con.desk {
+      display: none;
+    }
+    .bio_img_con.mob {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .about .row {
+    .bio .bio_txt {
+      .bio_ttl {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .skills .skills_con .skill_con {
+      width: 200px;
+      height: 200px;
+      padding: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about .row .bio .bio_txt .stats {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .stat {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .about .row {
+    .bio {
+      .mob_ttl {
+        display: flex;
+        margin-bottom: 20px;
+
+        .animatedTitle.med {
+          margin: 0 auto;
+          font-size: 32px;
+        }
+      }
+      .desk_ttl {
+        display: none;
+      }
+      .bio_txt .bio_ttl {
+        font-size: 26px;
+      }
+    }
+    .skills {
+      .animatedTitle.med {
+        font-size: 32px;
+      }
+      .skills_con .skill_con {
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        margin: 0 0 80px 0;
+
+        h3 {
+          display: none;
+        }
+
+        h4 {
+          display: block;
+        }
+      }
+    }
+    .experiences {
+      margin-bottom: 100px;
+      .animatedTitle.med {
+        font-size: 32px;
+      }
+    }
+
+    .education {
+      margin: 100px auto 0 auto;
+
+      .animatedTitle.med {
+        font-size: 32px;
       }
     }
   }
