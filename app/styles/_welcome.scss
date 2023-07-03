@@ -7,7 +7,7 @@
   overflow-y: hidden;
 
   .row {
-    min-height: calc(100vh - 80px);
+    height: 100%;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
@@ -173,6 +173,11 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .welcome {
+    min-height: calc(100vh - 40px);
+  }
+}
 @media only screen and (max-width: $tablet) {
   .welcome .row p {
     font-size: 20px;
