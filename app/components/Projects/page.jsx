@@ -54,10 +54,20 @@ const Project = ({ project }) => {
 const ProjectSection = () => {
   return (
     <>
-      <AnimatedTextCharacter
-        className="margin med"
-        text=" Inspiring Projects from the Cosmos"
-      />
+      <div className="mob_ttl">
+        <AnimatedTextCharacter
+          className="margin med"
+          text=" Inspiring Projects from"
+        />
+        <AnimatedTextCharacter className="margin med" text="  the Cosmos" />
+      </div>
+      <div className="desk_ttl">
+        <AnimatedTextCharacter
+          className="margin med"
+          text=" Inspiring Projects from the Cosmos"
+        />
+      </div>
+
       <div className="projects_con">
         {projects.map((project) => (
           <Project key={project.id} project={project} />

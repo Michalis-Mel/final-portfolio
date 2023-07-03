@@ -405,9 +405,17 @@
       }
     }
     .experiences {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       .animatedTitle.med {
         font-size: 32px;
+      }
+      .vertical-timeline-element {
+        .exp_info h3 {
+          font-size: 20px;
+        }
+        .vertical-timeline-element-date {
+          font-size: 18px;
+        }
       }
     }
 

@@ -51,7 +51,7 @@ export const skills = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
 
@@ -73,7 +73,7 @@ export const skills = [
   },
 
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
 
