@@ -148,7 +148,10 @@ const MobileNav = () => {
               variants={liVariant}
               className={`${path === "/" ? "active" : ""}`}
               href="/"
-              onClick={() => setMobileNavOpen(false)}
+              onClick={() => {
+                setMobileNavOpen(false);
+                document.body.classList.remove("noScroll");
+              }}
             >
               Home
             </MotionLink>
@@ -159,7 +162,10 @@ const MobileNav = () => {
               variants={liVariant}
               className={`${path === "/about" ? "active" : ""}`}
               href="/about"
-              onClick={() => setMobileNavOpen(false)}
+              onClick={() => {
+                setMobileNavOpen(false);
+                document.body.classList.remove("noScroll");
+              }}
             >
               About
             </MotionLink>
@@ -169,7 +175,10 @@ const MobileNav = () => {
               variants={liVariant}
               className={`${path === "/projects" ? "active" : ""}`}
               href="/projects"
-              onClick={() => setMobileNavOpen(false)}
+              onClick={() => {
+                setMobileNavOpen(false);
+                document.body.classList.remove("noScroll");
+              }}
             >
               Projects
             </MotionLink>
@@ -179,7 +188,10 @@ const MobileNav = () => {
               variants={liVariant}
               className={`${path === "/contact" ? "active" : ""}`}
               href="/contact"
-              onClick={() => setMobileNavOpen(false)}
+              onClick={() => {
+                setMobileNavOpen(false);
+                document.body.classList.remove("noScroll");
+              }}
             >
               Contact
             </MotionLink>
