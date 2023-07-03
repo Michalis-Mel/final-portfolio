@@ -148,6 +148,44 @@ ul {
   body {
     padding-top: 40px;
   }
+  .animatedTitle.med {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .animatedTitle.big {
+    font-size: 55px;
+  }
+
+  .animatedTitle.small {
+    font-size: 20px;
+  }
+
+  .loadingBlackScreen .arrow {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .animatedTitle.med {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .animatedTitle.big {
+    font-size: 45px;
+  }
+  .animatedTitle.med {
+    font-size: 22px;
+  }
+  .animatedTitle.small {
+    font-size: 18px;
+  }
+
+  .loadingBlackScreen .arrow {
+    max-width: 30px;
+    max-height: 30px;
+  }
 }
 
 @import "./nav.scss";

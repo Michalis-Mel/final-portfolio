@@ -1,7 +1,8 @@
 .welcome {
   width: 100%;
+  min-height: calc(100vh - 80px);
   margin: 0 auto;
-  padding: 200px 0 50px 0;
+  padding: 50px 0;
   box-sizing: border-box;
   overflow-y: hidden;
 
@@ -123,8 +124,12 @@
       overflow: hidden;
       box-sizing: border-box;
       font-size: 0;
+      width: 100%;
+      max-width: 500px;
 
       img {
+        width: 100%;
+        height: auto;
         transition: all 1.5s ease-in-out;
       }
 
@@ -163,6 +168,28 @@
         .man_msg {
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .welcome .row p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .welcome .row {
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .welcome_btns {
+      flex-flow: column nowrap;
+      margin: 30px auto 60px;
+
+      a {
+        margin: 10px 0;
       }
     }
   }

@@ -116,6 +116,13 @@
     display: none;
   }
 }
+@media screen and (max-width: 900px) {
+  .hero .arrow {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .hero {
     .astro_mob {
@@ -123,6 +130,10 @@
     }
     .astro_desk {
       display: none;
+    }
+    .arrow {
+      max-width: 30px;
+      max-height: 30px;
     }
   }
 }

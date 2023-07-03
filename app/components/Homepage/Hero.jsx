@@ -3,7 +3,7 @@ import Link from "next/link";
 
 //Import images
 import astro from "@/public/images/space.jpg";
-import astro_mob from "@/public/images/space-mobile.jpg";
+import astro_mob from "@/public/images/space-mob.jpg";
 import bubble from "@/public/images/bubble.png";
 import arrow from "@/public/images/arrow3.png";
 
@@ -11,7 +11,7 @@ const Bubble = ({ size, index }) => {
   return (
     <Image
       priority
-      sizes="(max-width: 1100px) 50vw"
+      sizes="(max-width: 1100px) 100vw"
       src={bubble}
       width={size}
       height={size}
@@ -31,7 +31,7 @@ const Hero = () => {
         priority={true}
         src={astro}
         alt="Astronaut"
-        sizes="(max-width: 1100px) 50vw"
+        sizes="(max-width: 1100px) 100vw"
       />
       <Image
         className="astro astro_mob"
@@ -40,7 +40,7 @@ const Hero = () => {
         priority={true}
         src={astro_mob}
         alt="Astronaut"
-        sizes="(max-width: 500px) 50vw"
+        sizes="(max-width: 500px) 100vw"
       />
       <Bubble size={70} index={1} />
       <Bubble size={90} index={2} />

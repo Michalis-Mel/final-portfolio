@@ -95,6 +95,23 @@ const MobileNav = () => {
       },
     },
   };
+  const socialsVariant = {
+    opened: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        ease: "easeOut",
+        delay: 2,
+      },
+    },
+    closed: {
+      opacity: 0,
+      transition: {
+        duration: 0.25,
+        ease: "easeInOut",
+      },
+    },
+  };
 
   return (
     <motion.div
@@ -172,7 +189,9 @@ const MobileNav = () => {
             </MotionLink>
           </motion.div>
         </motion.nav>
-        <SocialLinks />
+        <motion.div variants={socialsVariant}>
+          <SocialLinks />
+        </motion.div>
       </motion.div>
     </motion.div>
   );
