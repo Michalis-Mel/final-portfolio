@@ -49,11 +49,7 @@ const Welcome = () => {
               <Image src={link} width={25} alt="Link" />
             </span>
           </Link>
-          <Link
-            href="mailto:mixalismeliop@gmail.com"
-            target="_blank"
-            className="contact"
-          >
+          <Link href="/contact" className="contact">
             <i></i>
             <i></i>
             <span>
