@@ -1,10 +1,10 @@
 "use client";
 import { AnimatedTextCharacter, FadeInDiv } from "@/app/animations";
-import { skills } from "@/app/constants/Skills";
+import { techSkills, softSkills } from "@/app/constants/Skills";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 
-const Skill = ({ key, name, icon }) => {
+const TechSkill = ({ key, name, icon }) => {
   return (
     <div className="skill">
       <Image src={icon} width={80} alt={name} />
@@ -12,21 +12,42 @@ const Skill = ({ key, name, icon }) => {
     </div>
   );
 };
+const SoftSkill = ({ key, name }) => {
+  return (
+    <div className="skill">
+      <h2>{name}</h2>
+    </div>
+  );
+};
 
 const Skills = () => {
   return (
     <div className="skills">
-      <AnimatedTextCharacter className="margin med" text="Skills" />
-      <FadeInDiv className="skills_con">
-        {skills.map((skill) => {
-          return (
-            <Tilt key={skill.name} className="skill_con">
-              <Skill name={skill.name} icon={skill.icon} />
-              <h4>{skill.name}</h4>
-            </Tilt>
-          );
-        })}
-      </FadeInDiv>
+      <div className="techSkills">
+        <AnimatedTextCharacter className="margin med" text="Techical Skills" />
+        <FadeInDiv className="skills_con">
+          {techSkills.map((skill) => {
+            return (
+              <Tilt key={skill.name} className="skill_con">
+                <TechSkill name={skill.name} icon={skill.icon} />
+                <h4>{skill.name}</h4>
+              </Tilt>
+            );
+          })}
+        </FadeInDiv>
+      </div>
+      <div className="softSkills">
+        <AnimatedTextCharacter className="margin med" text="Soft Skills" />
+        <FadeInDiv className="skills_con">
+          {softSkills.map((skill) => {
+            return (
+              <Tilt key={skill.name} className="skill_con">
+                <SoftSkill name={skill.name} />
+              </Tilt>
+            );
+          })}
+        </FadeInDiv>
+      </div>
     </div>
   );
 };

@@ -116,7 +116,19 @@
 
     .skills {
       width: 100%;
-      margin: 50px auto 150px auto;
+      margin: 50px auto 0 auto;
+
+      .softSkills {
+        margin: 0 auto 150px auto;
+        h2 {
+          margin: 0;
+          font-size: 17px;
+          text-shadow: 0 0 10px var(--blue2);
+        }
+      }
+      .techSkills {
+        margin: 0 auto 150px auto;
+      }
 
       .skills_con {
         display: flex;
@@ -157,7 +169,7 @@
             }
           }
           h4 {
-            font-size: 20px;
+            font-size: 17px;
             margin: 15px auto 0 auto;
             width: 100%;
             text-align: center;
@@ -402,6 +414,10 @@
         h4 {
           display: block;
         }
+      }
+
+      .softSkills .skill_con {
+        margin: 0 !important;
       }
     }
     .experiences {

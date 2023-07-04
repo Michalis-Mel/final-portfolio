@@ -26,32 +26,40 @@ const Biography = () => {
 
       <div className="bio_txt">
         <FadeInText className="bio_ttl" text="Biography" myDelay={1} />
+        <FadeInText
+          text="Greetings, cosmic explorers! Prepare for an otherworldly encounter as
+        you venture into the cosmic domain of Michael Meliopoulos. Born on the
+        astral plane of 1st February 1996, I am a celestial being with a
+        profound love for anime, a relentless devotion to the gym, and an
+        unyielding passion for football. "
+          myDelay={1}
+        />
+        <FadeInText
+          text="I am an interstellar front-end web developer, harnessing the cosmic
+        energies to craft awe-inspiring digital experiences. With a journey
+        spanning 2 years through the boundless reaches of the digital cosmos, I
+        am constantly pushing the boundaries of innovation, seeking novel
+        frontiers to bring my client's visions to life. "
+          myDelay={1}
+        />
+        <FadeInText
+          text="In the realm of my cosmic design philosophy, I transcend the
+        conventional notion of aesthetics, intertwining the art of
+        problem-solving to forge intuitive and breathtaking journeys for users.
+        For the creation of celestial websites, stellar mobile apps, or other
+        astral digital marvels, I infuse each project with an unwavering
+        commitment to design excellence and a laser focus on user-centricity."
+          myDelay={1}
+        />
+        <FadeInText
+          text="Prepare to embark on an extraordinary expedition through the cosmos, as
+        I channel my celestial skills and unwavering devotion to manifest your
+        next visionary project. Together, we shall defy the limits of the
+        digital universe, reshaping the cosmic fabric and redefining what is
+        possible."
+          myDelay={1}
+        />
 
-        <FadeInText
-          text="Welcome, cosmic explorers! I'm Michael Meliopoulos, an
-            interstellar front-end web developer, driven by a celestial passion
-            for crafting breathtaking, user-centered digital experiences. With 2
-            years of traversing the digital cosmos, I constantly seek new
-            frontiers and innovative methods to manifest my client's
-            visions into reality."
-          myDelay={1}
-        />
-        <FadeInText
-          text="In my cosmic design philosophy, I believe that aesthetics transcend
-            mere beauty, encompassing problem-solving and forging intuitive,
-            awe-inspiring journeys for users. Whether it's shaping
-            celestial websites, stellar mobile apps, or other astral digital
-            creations, I infuse each project with a commitment to design
-            excellence and user-centricity."
-          myDelay={1}
-        />
-        <FadeInText
-          text="Embark on an extraordinary expedition and allow me to channel my
-            skills and celestial devotion into realizing your next visionary
-            project. Together, we shall redefine the boundaries of the digital
-            universe."
-          myDelay={1}
-        />
         <FadeInDiv className="stats" myDelay={1}>
           <Tilt>
             <div className="stat">

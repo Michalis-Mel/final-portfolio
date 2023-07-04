@@ -17,7 +17,7 @@ import wordpress from "@/public/images/skills_icons/wordpress.png";
 import framer from "@/public/images/skills_icons/framer.png";
 import figma from "@/public/images/skills_icons/figma.png";
 
-export const skills = [
+export const techSkills = [
   {
     name: "HTML 5",
     icon: html,
@@ -92,5 +92,43 @@ export const skills = [
   {
     name: "Responsive Web Design",
     icon: responsive,
+  },
+];
+export const softSkills = [
+  {
+    name: "Communication",
+  },
+  {
+    name: "Teamwork",
+  },
+  {
+    name: "Problem solving",
+  },
+  {
+    name: "Time management",
+  },
+  {
+    name: "Critical thinking",
+  },
+  {
+    name: "Decision making",
+  },
+  {
+    name: "Organizational",
+  },
+  {
+    name: "Stress management",
+  },
+  {
+    name: "Adaptability",
+  },
+  {
+    name: "Creativity",
+  },
+  {
+    name: "Resourcefulness",
+  },
+  {
+    name: "Openness to criticism",
   },
 ];
