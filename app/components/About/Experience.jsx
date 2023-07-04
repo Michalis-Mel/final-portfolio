@@ -3,6 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import Link from "next/link";
 import { AnimatedTextCharacter } from "@/app/animations";
 import { experiences } from "@/app/constants/Experiences";
 import "react-vertical-timeline-component/style.min.css";
@@ -25,7 +26,13 @@ const ExperienceCard = ({ experience }) => (
   >
     <div className="exp_info">
       <h3>{experience.title}</h3>
-      <p>{experience.company_name}</p>
+      {experience.link.length > 0 ? (
+        <Link href={experience.link} target="_blank">
+          <p>{experience.company_name}</p>
+        </Link>
+      ) : (
+        <p>{experience.company_name}</p>
+      )}
     </div>
     <ul>
       {experience.points.map((point, index) => (
