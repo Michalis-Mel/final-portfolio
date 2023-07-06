@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="techSkills">
-        <AnimatedTextCharacter className="margin med" text="Techical Skills" />
+        <AnimatedTextCharacter className="margin med" text="Technical Skills" />
         <FadeInDiv className="skills_con">
           {techSkills.map((skill) => {
             return (
