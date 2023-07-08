@@ -352,12 +352,15 @@
 
 @media only screen and (max-width: $tablet) {
   .about .row {
-    .bio .bio_txt {
-      .bio_ttl {
-        font-size: 24px;
-      }
-      p {
-        font-size: 18px;
+    .bio {
+      margin-top: 20px;
+      .bio_txt {
+        .bio_ttl {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
       }
     }
     .skills .skills_con .skill_con {
