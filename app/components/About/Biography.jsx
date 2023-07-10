@@ -9,6 +9,7 @@ import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import hotel from "@/public/images/hotel-portrait.png";
 import hotelMob from "@/public/images/hotel.webp";
+import me from "@/public/images/me.png";
 
 const Biography = () => {
   return (
@@ -25,6 +26,11 @@ const Biography = () => {
       </div>
 
       <div className="bio_txt">
+        <FadeInDiv myDelay={1} className="bio_images bio_images_mob">
+          <div className="me_con">
+            <Image className="me" src={me} width={300} alt="Myself" />
+          </div>
+        </FadeInDiv>
         <FadeInText className="bio_ttl" text="Biography" myDelay={1} />
         <FadeInText
           text="Greetings, cosmic explorers! Prepare for an otherworldly encounter as
@@ -87,25 +93,23 @@ const Biography = () => {
             </div>
           </Tilt>
         </FadeInDiv>
+
+        <FadeInDiv className="bio_img_con mob" myDelay={1}>
+          <Image
+            src={hotelMob}
+            quality={100}
+            width={600}
+            alt="Web Developer in Space Hotel"
+            priority
+            sizes="(max-width: 1100px) 100vw"
+          />
+        </FadeInDiv>
       </div>
-      <FadeInDiv className="bio_img_con desk" myDelay={1}>
-        <Image
-          src={hotel}
-          width={450}
-          alt="Web Developer in Space Hotel"
-          priority
-          sizes="(max-width: 1100px) 50vw"
-        />
-      </FadeInDiv>
-      <FadeInDiv className="bio_img_con mob" myDelay={1}>
-        <Image
-          src={hotelMob}
-          quality={100}
-          width={900}
-          alt="Web Developer in Space Hotel"
-          priority
-          sizes="(max-width: 1100px) 100vw"
-        />
+
+      <FadeInDiv myDelay={1} className="bio_images bio_images_desk">
+        <div className="me_con">
+          <Image className="me" src={me} width={300} alt="Myself" />
+        </div>
       </FadeInDiv>
     </div>
   );

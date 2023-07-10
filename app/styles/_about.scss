@@ -36,6 +36,10 @@
         padding-right: 40px;
         box-sizing: border-box;
 
+        .bio_images_mob {
+          display: none;
+        }
+
         .bio_ttl {
           margin: 0 auto 0 0;
           font-size: 30px;
@@ -48,7 +52,7 @@
         }
 
         .stats {
-          margin-top: 100px;
+          margin: 80px auto;
           width: 100%;
           display: flex;
           flex-flow: row nowrap;
@@ -95,23 +99,63 @@
             }
           }
         }
-      }
+        .bio_img_con {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-      .bio_img_con {
-        flex: 0 0 30%;
-        width: 30%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-
-        img {
-          max-width: 100%;
-          height: auto;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
         }
       }
 
-      .bio_img_con.mob {
-        display: none;
+      .bio_images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+
+        .me_con {
+          max-width: 80%;
+          padding: 20px 10px 0 10px;
+          box-sizing: border-box;
+          transition: all 0.3s ease-in-out;
+          box-sizing: border-box;
+          border-radius: 50%;
+          overflow: hidden;
+          box-shadow: 0 0 20px var(--blue2);
+          font-size: 0;
+          background: radial-gradient(
+            circle,
+            var(--blue2) 0%,
+            var(--blue1) 50%,
+            var(--dark) 100%
+          );
+
+          &:hover {
+            box-shadow: 0 0 20px var(--pink);
+          }
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .bio_images_desk {
+        position: sticky;
+        right: 0;
+        top: 40%;
+        flex: 0 0 30%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
       }
     }
 
@@ -335,17 +379,16 @@
       width: 100%;
       padding: 0;
       margin: 30px auto 80px auto;
+
+      .bio_images_mob {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+      }
     }
-    .bio_img_con {
-      flex: 0 0 100%;
-      width: 100%;
-      max-width: 100%;
-    }
-    .bio_img_con.desk {
+
+    .bio_images_desk {
       display: none;
-    }
-    .bio_img_con.mob {
-      display: flex;
     }
   }
 }
