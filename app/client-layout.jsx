@@ -63,7 +63,6 @@ export function ClientRootLayout({ children }) {
               className={`${controls ? "active" : ""}`}
               src={mySong}
               loop
-              autoPlay
               controls
             />
             <button id="controls" onClick={() => setControls(!controls)}>
