@@ -2,9 +2,13 @@
 import localFont from "next/font/local";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ReactAudioPlayer from "react-audio-player";
+import Image from "next/image";
 
+import mySong from "@/public/music.mp3";
 import Nav from "./components/Nav/Nav";
 import Loading from "./components/loading";
+import volumeControl from "@/public/images/icons/music.png";
 
 const nunito = localFont({
   src: [
@@ -28,6 +32,7 @@ const nunito = localFont({
 
 export function ClientRootLayout({ children }) {
   const [loading, setLoading] = useState(false);
+  const [controls, setControls] = useState(false);
 
   return (
     <html lang="en">
@@ -48,6 +53,28 @@ export function ClientRootLayout({ children }) {
         >
           <Nav />
           {children}
+          <motion.div
+            className="musicCon"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 2 }}
+          >
+            <ReactAudioPlayer
+              className={`${controls ? "active" : ""}`}
+              src={mySong}
+              loop
+              autoPlay
+              controls
+            />
+            <button id="controls" onClick={() => setControls(!controls)}>
+              <Image
+                src={volumeControl}
+                width={30}
+                height={30}
+                alt="Music Controls"
+              />
+            </button>
+          </motion.div>
         </motion.body>
       ) : (
         <body

@@ -7,7 +7,6 @@ import {
 } from "@/app/animations";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
-import hotel from "@/public/images/hotel-portrait.png";
 import hotelMob from "@/public/images/hotel.webp";
 import me from "@/public/images/me.png";
 
