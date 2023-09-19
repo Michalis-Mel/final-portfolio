@@ -6,10 +6,21 @@ import rick from "@/public/images/projects_images/rick.png";
 import sphere from "@/public/images/projects_images/sphere.png";
 import wikirocket from "@/public/images/projects_images/wikirocket.png";
 import tsaou from "@/public/images/projects_images/tsaou.png";
+import yummy from "@/public/images/projects_images/yummy.png";
 
 export const projects = [
   {
     id: 1,
+    name: "YummyGreek Restaurant",
+    technologies: ["HTML", "Sass", "React", "JavaScript"],
+    description:
+      "Yummy Greek Restaurant is a web application dedicated to sharing information about our restaurant. It provides details about our menu, dish details and allows users to make their order.",
+    image: yummy,
+    github: "https://github.com/Michalis-Mel/Yummy_Greek_Restaurant",
+    live: "https://michalis-mel.github.io/Yummy_Greek_Restaurant/",
+  },
+  {
+    id: 2,
     name: "M² Blog",
     technologies: ["React", "ThreeJs", "NextJs 13", "Redux", "Sass"],
     description:
@@ -19,7 +30,7 @@ export const projects = [
     live: "https://m2-blog.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "WikiRocket",
     technologies: ["React", "TailwindCSS", "NextJs 13", "Typescript"],
     description:
@@ -29,7 +40,7 @@ export const projects = [
     live: "https://wikirocket-m.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "M² Webworks | 3D Portfolio",
     technologies: ["React", "TailwindCSS", "ThreeJs", "Vite", "Framer Motion"],
     description:
@@ -39,7 +50,7 @@ export const projects = [
     live: "https://3d-portfolio-brown.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "M² Repositories",
     technologies: ["React", "NextJs 13", "Sass"],
     description:
@@ -49,7 +60,7 @@ export const projects = [
     live: "https://m2-repositories.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Promptopia",
     technologies: [
       "React",
@@ -67,7 +78,7 @@ export const projects = [
     live: "https://m2-promptopia.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Sphere",
     technologies: ["Vite", "ThreeJs", "Gsap"],
     description:
@@ -77,7 +88,7 @@ export const projects = [
     live: "https://michalis-mel.github.io/Sphere/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Rick & Morty",
     technologies: ["React", "Redux", "Sass", "Axios"],
     description:
@@ -87,7 +98,7 @@ export const projects = [
     live: "https://michalis-mel.github.io/rick_morty/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Tsaousis Accounting",
     technologies: ["Wordpress", "CSS"],
     description:
