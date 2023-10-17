@@ -7,10 +7,33 @@ import sphere from "@/public/images/projects_images/sphere.png";
 import wikirocket from "@/public/images/projects_images/wikirocket.png";
 import tsaou from "@/public/images/projects_images/tsaou.png";
 import yummy from "@/public/images/projects_images/yummy.png";
+import pawtales from "@/public/images/projects_images/pawtales.png";
 
 export const projects = [
   {
     id: 1,
+    name: "PawTales",
+    technologies: [
+      "HTML",
+      "SCSS",
+      "React",
+      "Vite",
+      "JavaScript",
+      "Context API",
+      "Firebase",
+      "Axios",
+      "Framer Motion",
+      "Emailjs",
+      "React Share",
+    ],
+    description:
+      "PawTales is a delightful web app built with React and Vite, designed to entertain and educate children about the wonderful world of animals. Our aim is to foster a love for animals and promote their protection from a young age. With engaging stories and interactive features, PawTales is the perfect place for kids to explore and learn.",
+    image: pawtales,
+    github: "https://github.com/Michalis-Mel/PawTales",
+    live: "https://michalis-mel.github.io/PawTales/#/PawTales",
+  },
+  {
+    id: 2,
     name: "YummyGreek Restaurant",
     technologies: ["HTML", "Sass", "React", "JavaScript"],
     description:
@@ -20,7 +43,7 @@ export const projects = [
     live: "https://michalis-mel.github.io/Yummy_Greek_Restaurant/",
   },
   {
-    id: 2,
+    id: 3,
     name: "M² Blog",
     technologies: ["React", "ThreeJs", "NextJs 13", "Redux", "Sass"],
     description:
@@ -30,7 +53,7 @@ export const projects = [
     live: "https://m2-blog.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "WikiRocket",
     technologies: ["React", "TailwindCSS", "NextJs 13", "Typescript"],
     description:
@@ -40,7 +63,7 @@ export const projects = [
     live: "https://wikirocket-m.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "M² Webworks | 3D Portfolio",
     technologies: ["React", "TailwindCSS", "ThreeJs", "Vite", "Framer Motion"],
     description:
@@ -50,7 +73,7 @@ export const projects = [
     live: "https://3d-portfolio-brown.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "M² Repositories",
     technologies: ["React", "NextJs 13", "Sass"],
     description:
@@ -60,7 +83,7 @@ export const projects = [
     live: "https://m2-repositories.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Promptopia",
     technologies: [
       "React",
@@ -78,7 +101,7 @@ export const projects = [
     live: "https://m2-promptopia.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Sphere",
     technologies: ["Vite", "ThreeJs", "Gsap"],
     description:
@@ -88,7 +111,7 @@ export const projects = [
     live: "https://michalis-mel.github.io/Sphere/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Rick & Morty",
     technologies: ["React", "Redux", "Sass", "Axios"],
     description:
@@ -98,7 +121,7 @@ export const projects = [
     live: "https://michalis-mel.github.io/rick_morty/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Tsaousis Accounting",
     technologies: ["Wordpress", "CSS"],
     description:
