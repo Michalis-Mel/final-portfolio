@@ -30,7 +30,7 @@ export const projects = [
       "PawTales is a delightful web app built with React and Vite, designed to entertain and educate children about the wonderful world of animals. Our aim is to foster a love for animals and promote their protection from a young age. With engaging stories and interactive features, PawTales is the perfect place for kids to explore and learn.",
     image: pawtales,
     github: "https://github.com/Michalis-Mel/PawTales",
-    live: "https://michalis-mel.github.io/PawTales/#/PawTales",
+    live: "https://www.pawtales.gr/",
   },
   {
     id: 2,
