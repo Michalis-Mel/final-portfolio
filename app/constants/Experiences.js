@@ -22,7 +22,7 @@ export const experiences = [
     company_name: "Progressive Robotics",
     icon: progressive,
     iconBg: "#fff",
-    date: "March 2021 - March 2023",
+    date: "November 2021 - Today",
     points: [
       "As the sole Front-End Developer at Progressive Robotics, I am at the helm of architecting and managing the entire front-end ecosystem for our cutting-edge application.",
       "Leveraging technologies such as React, TypeScript, Three.js, and Mobx-State-Tree, I contribute to the innovative forefront of the robotics industry through the development and optimization of our state-of-the-art application.",
